@@ -1,0 +1,249 @@
+
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+
+  .menu li a:hover {
+    background-color: #555;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  /* SECCIÓN INICIO */
+
+  .section-inicio {
+    height: 100vh;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100%;
+    background-color: magenta;
+    animation: colorChange 2s infinite;
+    animation-play-state: paused;
+  }
+
+  .banner:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes colorChange {
+    from {background-color: magenta;}
+    to {background-color: aqua;}
+  }
+
+/* SECCIÓN SHAKE */
+
+  .section-shake {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .shake-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;   
+  }
+
+  .shake-column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+  }
+
+  .shake-horizontal:hover {
+    animation: shake-horizontal 0.5s infinite;
+  }
+
+  .shake-vertical:hover {
+    animation: shake-vertical 0.5s infinite;
+  }
+
+  @keyframes shake-horizontal {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+  
+  @keyframes shake-vertical {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    75% { transform: translateY(5px); }
+  }
+
+
+  .rect{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+
+  /* SECCIÓN TRANSICIÓN */
+
+
+  .section-transicion {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .transition-rect {
+    background-color: red;
+    width: 50%;
+    height: 100px;
+    transition: width 10s ease;
+  }
+
+  .transition-rect:hover {
+    width: 100%;
+  }
+
+
+  /* Sección ACCIÓN */
+.section-accion {
+  padding: 60px 20px;
+  text-align: center;
+}
+#actionRect {
+  background-color: lime;
+  width: 200px;
+  height: 100px;
+}
+
+.animate-action {
+  animation: moveAndColor 5s infinite;
+}
+
+@keyframes moveAndColor {
+  0% {
+    transform: translate(0, 0);
+    background-color: lime;
+  }
+  25% {
+    transform: translate(300px, 0);   
+    background-color: orange;
+  }
+  50% {
+    transform: translate(300px, 100px); 
+    background-color: red;
+  }
+  75% {
+    transform: translate(0, 100px);    
+    background-color: aqua;
+  }
+  100% {
+    transform: translate(0, 0);    
+    background-color: lime;
+  }
+}
+
+
+/* SECCIÓN CONTACTO */
+.section-contacto {
+  background-color: #F6F7F4;
+  padding: 60px 20px;
+}
+
+.section-contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-form, .contact-map {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+footer {
+  background-color: #313130;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
