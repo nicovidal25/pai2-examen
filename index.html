@@ -1,135 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Examen PAI2</title>
 
-    <!-- Roboto font-->
-     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <!-- CSS Externo-->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Menu-->
-    <header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="#inicio">inicio</a></li>
-                <li><a href="#shake">shake</a></li>
-                <li><a href="#transicion">transición</a></li>
-                <li><a href="#accion">acción</a></li>
-                <li><a href="#contacto">contacto</a></li>   
-            </ul>
-        </nav>
+    <!-- Roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menú -->
+    <header>
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#shake">shake</a></li>
+          <li><a href="#transicion">transición</a></li>
+          <li><a href="#accion">acción</a></li>
+          <li><a href="#contacto">contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Contenido Principal-->
-     <main>
-        <!-- SECCIÓN INICIO -->
-        <section id="inicio" class="section-inicio">
-            <div class="banner"></div>
-        </section>
-
-        <!-- SECCIÓN SHAKE -->
-        <section id="shake" class="section-shake">
-        <h2>shake</h2>
-         <div class="shake-container">
-            <div class="shake-column-container">
-                <div class="rect yellow shake-horizontal"></div>
-                <p>Este objeto amarillo dice que no.</p>
-            </div>
-
-            <div class="shake-column-container">
-                <div class="rect blue shake-vertical"></div>
-                <p>Este objeto azul dice que si.</p>
-            </div>
-         </div>
-
-          <!-- SECCIÓN TRANSICIÓN -->
-          <section id="transicion" class="section-transicion">
-            <h2>transicion</h2>
-            <div class="rect red transition-rect"></div>
-            <p>Pase el mouse sobre este objeto y crecerá del 50% al 100% en 10 segundos.</p>
-          </section>
-
-
-          <!-- SECCIÓN ACCIÓN -->
-        <section id="accion" class="section-accion">
-            <h2>accion</h2>
-            <div class="rect green" id="actionRect"></div>
+    <!-- Contenido Principal -->
+    <main>
+      <!-- SECCIÓN INICIO -->
+      <section id="inicio" class="section-inicio">
+        <div class="banner"></div>
       </section>
 
-
-      <!-- SECCIÓN CONTACTO -->
-    <section id="contacto" class="section-contacto">
-        <h2>contacto</h2>
-        <div class="contact-wrapper">
-
-          <div class="contact-form">
-            <form>
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre"  required>
-              <label for="email">Email</label>
-              <input type="email" id="email"  required>
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" required></textarea>
-              <button type="submit">Enviar</button>
-            </form>
+      <!-- SECCIÓN SHAKE -->
+      <section id="shake" class="section-shake">
+        <h2>shake</h2>
+        <div class="shake-container">
+          <div class="shake-column-container">
+            <div class="rect yellow shake-horizontal"></div>
+            <p>Este objeto amarillo dice que no.</p>
           </div>
-          <div class="contact-map">
-            <div id="map"></div>
+
+          <div class="shake-column-container">
+            <div class="rect blue shake-vertical"></div>
+            <p>Este objeto azul dice que si.</p>
           </div>
         </div>
       </section>
 
-        <!-- FOOTER -->
-        <footer>
-            <a href="http://www.fadu.edu.uy/pai-ii" target="_blank">Nicolas Vidal | PAI 2</a>
-        </footer>
+      <!-- SECCIÓN TRANSICIÓN -->
+      <section id="transicion" class="section-transicion">
+        <h2>transicion</h2>
+        <div class="rect red transition-rect"></div>
+        <p>
+          Pase el mouse sobre este objeto y crecerá del 50% al 100% en 10
+          segundos.
+        </p>
+      </section>
 
-     </main>
+      <!-- SECCIÓN ACCIÓN -->
+      <section id="accion" class="section-accion">
+        <h2>accion</h2>
+        <div class="rect green" id="actionRect"></div>
+      </section>
 
+      <!-- SECCIÓN CONTACTO -->
+      <section id="contacto" class="section-contacto">
+        <h2>contacto</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" required />
 
-     <script>
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
 
-        const actionRect = document.getElementById('actionRect');
-        actionRect.addEventListener('click', function() {
-            this.classList.add('animate-action');
-        });
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" required></textarea>
 
-        function initMap() {
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.210383742828!2d-56.16614833996138!3d-34.90986536294749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a69a5e9493%3A0x3e14212c3c5e8b2d!2sFacultad%20de%20Arquitectura%2C%20Dise%C3%B1o%20y%20Urbanismo!5e0!3m2!1ses-419!2suy!4v1739554299444!5m2!1ses-419!2suy"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
 
-            // TODO: Completar coordenadas
-            const lat = 1
-            const lng = 2
- 
-      const fadPosition = { lat: -34.904, lng: -56.164 };
-      const map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: fadPosition
+      <!-- FOOTER -->
+      <footer>
+        <a href="http://www.fadu.edu.uy/pai-ii" target="_blank"
+          >Nicolas Vidal | PAI 2</a
+        >
+      </footer>
+    </main>
+
+    <script>
+      const actionRect = document.getElementById("actionRect");
+      actionRect.addEventListener("click", function () {
+        this.classList.add("animate-action");
       });
-     
-      new google.maps.Marker({
-        position: fadPosition,
-        map: map
-      });
-    }
-
-
-
-
-
-
-     </script>
-
-
-
-
-</body>
-
-
-
-
+    </script>
+  </body>
 </html>
